@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Login
+{% endblock title %}
+
+{% block body %}
+<h1>Login</h1>
+<br><br>
+<form method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        {{ form.as_p }}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<br>
+<p>
+    Forgot your password? <a href="{% url 'forg' %}">Click here to reset it</a>.
+</p>
+<p>
+    New to our platform? <a href="{% url 'signup' %}">Create an account</a> and join us today!
+</p>
+{% endblock body %}

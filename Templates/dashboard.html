@@ -1,0 +1,21 @@
+{% extends "base.html" %} ]
+
+
+{% block title %} Dashboard {% endblock title %} 
+
+{% block body %}
+
+<div class="container mt-5">
+  <h1>Welcome to your Dashboard, {{ user.username }}!</h1>
+  <p>Here, you can access your profile, change your password, or log out.</p>
+  <div class="mt-4">
+    <a href="{% url 'profile' %}" class="btn btn-info me-2">Profile</a>
+    <a href="{% url 'password_change' %}" class="btn btn-warning me-2">Change Password</a>
+    <form method="post" action="/logout/">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-danger">Logout</button>
+    </form>
+  </div>
+</div>
+
+{% endblock body %}

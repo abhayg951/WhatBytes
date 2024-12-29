@@ -15,13 +15,13 @@ This project implements a user authentication system using Django. It includes f
 ### Prerequisites
 - Python 3.8 or later
 - Django 4.x
-- SMTP access for sending emails (optional)
+- SMTP access for sending emails
 
 ### Steps
 1. Clone the repository:
     ```bash
-    git clone https://github.com/<your-username>/<repository-name>.git
-    cd <repository-name>
+    git clone https://github.com/abhayg951/WhatBytes.git
+    cd WhatBytes
     ```
 
 2. Create and activate a virtual environment:
@@ -98,7 +98,7 @@ Replace `your_email@example.com` and `your_password_or_app_specific_password` wi
 
 ## Demo Video
 
-[Watch Demo Video](https://loom.com/share/demo-link)  
+[Watch Demo Video](https://loom.com)  
 This video demonstrates the features and explains the implementation details.
 
 ---
